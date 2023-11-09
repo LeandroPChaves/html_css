@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitando_Tabelas</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;;
+            box-sizing: border-box;
+        }
+        thead tr:first-child{
+            background-color: gray;
+        }
+        tbody tr:nth-child(2n+1){
+            background-color: blue;
+        }
+        
+
+        nav li{
+            position: fixed;
+            background-color: aqua;
+            height: 50px;
+            width: 100%;
+            /* z-index: 1;     */
+            /* O z index dá a prioridade para o position fixed, sem que nenhum item fique por cima dele ao rolar a tela. */
+
+            /* No Flex Box eu posso pegar várias caixas e ordenar por exemplo a ordem de uma caixa através de
+            ex: .nomedaclasse:nth-child() */
+
+
+        }
+
+        h1{
+            padding-top: 50px;
+            animation: pulse .8000000s infinite;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            transform: scale(1);
+            text-align: center;
+        }
+
+        @keyframes pulse{
+            0%{
+              transform: scale(1);
+              opacity: 1;
+            }
+
+            100%{
+              transform: scale(1.35);
+              opacity: .6;
+            }
+
+            100%{
+              transform: scale(1.35);
+              opacity: 1;
+            }
+        }
+
+        table{
+            margin: 1px 0;
+        }
+        
+        .contactList h2{
+            position: sticky;
+            background-color: green;
+            top: 0px;
+            /* Position Stick, nesse caso faz o H2 sobressaí na position */
+        }
+
+        /* O first-child pega a primeira linha da coluna enquanto no nth-child nos parênteses vc escolhe quais linhas deseja pegar. Se colocar n pega todas. a primeira linha começa a ser contada no 0   */
+
+        [data-teste=loren]{
+
+            cursor: pointer;
+
+            /* display: none; 
+            Some todo o conteúdo e não ocupa espaço */
+
+            /* --------------------------------------------------------- */
+            /* opacity: 0; */
+            /* Some o conteúdo mas continua ocupando espaço e mantém os recursos do mouse ativado como nesse exemplo o cursor pointer */
+
+            /* ---------------------------------------------------------- */
+            /* visibility: hidden; */
+            /* Some o conteúdo, continua ocupando espaço porém não mantém os recursos do mouse ativado como nesse exemplo ele ignora o cursor pointer */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <li>
+                <a href="tbody">Início Teste</a>
+                <a href="www.globo.com">Final Teste</a>
+            </li>
+            
+        </nav>
+        <h1>Exercitando Tabelas</h1>
+    </header> 
+
+    <main>
+        <table border="4">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                 <tr>
+                    <td rowspan="2">15/06/2022</td>
+                    <td>Despesa</td>
+                    <td>Almoço</td>
+                    <td>R$ 35,00</td>
+                 </tr>
+
+                 <tr>
+                    <!-- <td>15/06/2022</td> -->
+                    <td>Receita</td>
+                    <td>Salário</td>
+                    <td>R$ 3.768,00</td>
+                 </tr>
+                 <tr>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                 </tr>
+                 <tr>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                 </tr>
+                 <tr>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                 </tr>
+            </tbody>
+        </table>
+        <section class="contactList">
+            <ul>
+                <h2>A</h2>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                    <li>Alex</li>
+                <h2>B</h2>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                    <li>Bruno</li>
+                <h2>C</h2>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                    <li>Caio</li>
+                <h2>D</h2>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                    <li>Dilma</li>
+                <h2>E</h2>
+                    <li>Elione</li>
+                    <li>Elione</li>
+                    <li>Elione</li>
+                    <li>Elione</li>
+                    <li>Elione</li>
+                    <li>Elione</li>
+                    <li>Elione</li>
+                    <li>Elione</li>
+                    <li>Elione</li>
+                    <li>Elione</li>
+                    <li>Elione</li>
+                    <li>Elione</li>
+                    <li>Elione</li>
+            </ul>
+        </section>
+        <section data-teste="loren">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?</p>
+
+            <blockquote> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis eveniet doloremque voluptatibus ipsum vel esse suscipit a expedita sint sapiente necessitatibus quaerat consectetur, tempore odit maxime, eius magni reprehenderit?
+            </blockquote>
+
+
+
+            
+        </section>
+    </main>
+
+</body>
+</html>

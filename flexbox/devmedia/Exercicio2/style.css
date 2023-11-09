@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article{
+    background-color: lightgray;
+}
+
+h1{
+    text-align: center;
+    padding: 10px 0;
+}
+
+span{
+    color: rgb(0, 255, 179);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.imagem{
+    height: 120px;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.agruparCard{
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+h2{
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+p{
+    font-size: 12px;
+}
+
+.card{
+    width: 220px;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 5px;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+
+p{
+    padding: 5px 0;
+}
+
+.pSpan{
+    font-style: italic;
+}

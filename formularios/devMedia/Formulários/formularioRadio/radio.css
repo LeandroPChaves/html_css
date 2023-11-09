@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #FE7321;
+    color: #ffffff;
+    padding: 10px;
+}
+
+main{
+    max-width: 500px;
+    margin: auto;
+}
+
+h1{
+    padding: 10px 0;
+    color: #FE7321;
+}
+
+p{
+    padding: 10px 0;
+    line-height: 30px;
+}
+
+.primeirosInput{
+    display: flex;
+    flex-direction: column;
+}
+
+.primeirosInput input{
+    margin: 10px 0;
+    height: 28px;
+}
+
+.doarSangue{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    background-color: #FE7321;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    height: 26px;
+    margin: 15px 0;
+}
+
+footer{
+    text-align: center;
+    color: #FE7321;
+    font-size: 12px;
+}

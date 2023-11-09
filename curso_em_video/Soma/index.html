@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+</head>
+<body>
+    <label for="idNum1">1º Número</label>
+    <input type="number" name="" id="idNum1" min="0" max="50" required
+    oninput="idSoma.innerHTML = Number(idNum1.value) + Number(idNum2.value)">
+    <br>
+
+
+    <label for="idNum2">2º Número</label>
+    <input type="number" name="" id="idNum2" min="0" max="50" required
+    oninput="idSoma.innerHTML = Number(idNum1.value) + Number(idNum2.value)">
+    <br>
+
+    <label for="idSoma">Soma:</label>
+    <output id="idSoma">0</output>
+    <br><br>
+
+    <label for="idRange">Nível de Satisfação</label>
+    <input type="range" name="" id="idRange" oninput="idSatisfacao.innerHTML = Number(idRange.value)">
+    <output id="idSatisfacao">5</output>
+
+</body>
+</html>

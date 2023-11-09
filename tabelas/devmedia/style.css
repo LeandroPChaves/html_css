@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    padding: 20px 0;
+    text-align: center;
+}
+
+h3{
+    margin-left: 20px;
+    font-weight: normal;
+    padding: 5px 0;
+    
+}
+
+table{
+    margin-left: 20px;
+    width: 1024px;
+    border:2px solid black;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+thead{
+    background-color: gray;
+}
+
+thead, tbody{
+    margin: 0;
+    padding: 0;
+}
+
+td, th{
+    /* padding-left: 20px; */
+    border: 0.01px solid #ffffff;
+    
+}
+
+/* odd - par, even - impar */
+
+tbody tr:nth-of-type(odd) { 
+    background: #5700cb;
+}
+
+tbody tr:nth-of-type(even) {
+    background: #9154e3;
+}
+
+td:first-child {
+    color: brown;
+    font-weight: bold;
+}
+
+td:last-child {
+    color: rgb(68, 68, 32);
+    font-weight: bold;
+}
+
+td:nth-child(2) {
+    color: greenyellow;
+}
+
+h3::after{
+    content: "____";
+    background: url(img/seta.png);
+    background-size: 37px 20px;
+}
+
+h1::before{
+    content: "_____________ ";
+    background: url(img/bolos.jpg);
+    background-size: 60px 40px;
+}
+
+
+
+
+
+
+/* #9154E3 */

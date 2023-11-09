@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+<body>
+    <header>
+        <h1>Estudando Iframe</h1>
+    </header>
+    
+    <main>
+        <!-- Tamanho padrão do Iframe 300 x 150 -->
+        <p>Vou testar o Iframe no Site do globo.com
+            <iframe src="//www.globo.com/" frameborder="0" height="500" scolling="no">
+                <!-- scolling não está funcionando. -->
+                <a href="https://www.globo.com/" target="_blank">www.globo.com</a>
+                <!-- Nesse caso a opção da âncora <a> aparecerá apenas se o site não funcionar -->
+            </iframe>
+        </p>
+
+        <p> Vou testar o Iframe no site do google
+            <iframe src="https://www.google.com.br/" frameborder="0">
+                <p>O site do google é protegido contra iframe. Então acesse o site: <a href="https://www.google.com.br/">google.com</a></p>
+            </iframe>
+        </p>
+
+        <p>Carregando um arquivo meu:
+            <iframe src="teste.html" frameborder="0"></iframe>
+        </p>
+
+        <iframe src="iframeTabela.html" frameborder="0" width="600px" height="600px">
+            <p>Infelizmente seu navegador não é compatível.</p>
+            
+        </iframe>
+    </main>
+</body>
+</html>

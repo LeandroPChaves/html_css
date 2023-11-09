@@ -1,0 +1,43 @@
+section{
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    background-color: lightgray;
+    position: relative;
+    max-width: 70%;
+    border: solid 2px black;
+}
+
+h1{
+    text-align: center;
+}
+
+.quadVermelho, .quadVerde, .quadPreto, .quadAzul{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.quadVermelho{
+    background-color: red;
+    top: 0;
+    left: 0;
+}
+
+.quadVerde{
+    background-color: green;
+    top: 0;
+    right: 0;
+}
+
+.quadPreto{
+    background-color: black;
+    bottom: 0;
+    left: 0;
+}
+
+.quadAzul{
+    background-color: blue;
+    bottom: 0;
+    right: 0;
+}   

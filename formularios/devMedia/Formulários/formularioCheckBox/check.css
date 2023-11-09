@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #7C008B;
+    color: #ffffff;
+    padding: 15px;
+}
+
+main{
+    max-width: 500px;
+    margin: auto;
+}
+
+h1{
+    padding: 15px 0;
+    color: #7C008B;
+}
+
+p{
+    padding: 15px 0;
+    line-height: 30px;
+}
+
+button{
+    background-color: #7C008B;
+    color: #ffffff;
+    border: none;
+    width: 85%;
+    height: 26px;
+    margin: 20px 0;
+}
+
+footer{
+    text-align: center;
+    color: #7C008B;
+    font-size: 12px;
+}
+
+

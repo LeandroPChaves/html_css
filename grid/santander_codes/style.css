@@ -1,0 +1,21 @@
+.boxes{
+    display: grid;
+    gap: 10px 20px;     
+    /* O Gap espaça os elementos, funcionando no display, também pode ser usado o row-gap e o column-gap */
+    justify-content: flex-start;
+    grid-template-columns: 4fr 1fr 2fr 6fr;
+    grid-template-rows: minmax(20px, 200px) 1fr 3fr; 
+    /* O grid-template-columns Divide as caixas em colunas e dar o tamanho de cada uma. A quantidade de fr é a quantidade de coluna e o número que coloca em cada fr é o tamanho. Da mesma forma o grid-template-rows faz com linhas. tambpem posso medir com px. tambpem pode ser usado o mínimo máximo através do minmax. Também podemos usar o repeat para não digitar repetidamento a quantidade de linhas e colunas, EX: grid-template-columns: 3fr repeat(2, 1fr) - mostra uma coluna com 3f e + 2 colunas com 1fr  */
+
+    /* Estudar Grid-Template-areas e grid area */
+}
+
+
+.box{
+    background-color: blue;
+    border: 5px solid red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    
+}

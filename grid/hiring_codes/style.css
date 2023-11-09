@@ -1,0 +1,36 @@
+.grid{
+    display: grid;
+    /* grid-template-columns: 100px 50px 300px 90px 100px 1px; */
+    /* grid-template-rows: 30px 13px 200px repeat(3, 100px); */
+    /* grid-template-rows: auto; */
+    /* grid-template-rows: 1fr 5fr 3fr 0.5fr 5fr 1fr; */
+    grid-template-columns: repeat(3, 2fr) 1fr 3fr 2fr;
+    gap: 5px;
+
+    
+}
+
+div{
+    width: auto;
+    height: 200px;
+}
+#a{
+    background: pink;
+    grid-row: 1;
+    grid-column: 3;
+}
+#b{
+    background: red;
+}
+#c{
+    background: blue;
+}
+#d{
+    background: green;
+}
+#e{
+    background: black;
+}
+#f{
+    background: gray;
+}

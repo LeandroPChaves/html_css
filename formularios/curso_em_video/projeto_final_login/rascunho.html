@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
+    <title>Testando Tela de Login</title>
+    <link rel="stylesheet" href="estilo/rascunho.css">
+</head>
+<body>
+    <main>
+        <section>
+            <img src="imagem/predio.jpg" alt="Imagem de Prédio" id="imgPredio">
+        </section>
+
+        <div>
+            <section class="bemVindo">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+            </section>
+            <form action="#" method="post">
+                <section class="login">
+                    <div>
+                        <!-- <i class="material-icons">person</i> -->
+                        <img src="imagem/user.ico" alt="ìcone de usuário" class="imgLogin">
+                        <input type="email" name="email" id="idEmal" required placeholder="seu e-mail">
+                    </div>
+                </section>
+                <section class="login">
+                    <div>
+                        <!-- <i class="material-icons">vpn_key</i> -->
+                        <img src="imagem/chave.png" alt="Imagem de chave para senha" class="imgLogin">
+            
+                        <input type="password" name="senha" id="idSenha" required placeholder="sua senha" minlength="8">
+                    </div>
+                </section>
+                <section class="secaoBotao">
+                    <input type="submit" value="Entrar" class="botao" id="botaoEntrar" >
+            
+                    <button class="botao" id="botaoEsqueci">Esqueci a senha<img src="imagem/envelope.ico" alt=""></button>
+                </section>
+            </form>
+        </div>
+    </main>
+</body>+
+</html>

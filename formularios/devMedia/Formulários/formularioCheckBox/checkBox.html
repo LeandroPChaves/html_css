@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="check.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h3>Questionário</h3>
+    </header>
+
+    <main>
+        <h1>Questionário</h1>
+        <p>Responda o questionário abaixo marcando as opções que correspondem as suas preferências por jogos.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula5/" autocomplete="off">
+            <section>
+                <p>Quais plataformas de jogos você utiliza?</p>
+                
+                <div>
+                    <input type="checkbox" name="jogos[]" value="xbox" id="idXbox">
+                    <label for="idXbox">Xbox</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="jogos[]" value="playstation" id="idPlaystation">
+                    <label for="idPlaystation">PlayStation</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="jogos[]" value="switch" id="idSwitch">
+                    <label for="idSwitch">Switch</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="jogos[]" value="stadia" id="idStadia">
+                    <label for="idStadia">Stadia</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="jogos[]" value="pc" id="idPc">
+                    <label for="idPc">PC</label>
+                </div>
+            </section>
+
+            <section>
+                <p>Quais seus gêneros de jogo preferido?</p>
+
+                <div>
+                    <input type="checkbox" name="generos[]" value="acao" id="idAcao">
+                    <label for="idAcao">Ação</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="generos[]" value="aventura" id="idAventura">
+                    <label for="idAventura">Aventura</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="generos[]" value="plataforma" id="idPlataforma">
+                    <label for="idPlataforma">Plataforma</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="generos[]" value="rpg" id="idRpg">
+                    <label for="idRpg">RPG</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="generos[]" value="tiro" id="idTiro">
+                    <label for="idTiro">Tiro</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="generos[]" value="corrida" id="idCorrida">
+                    <label for="idCorrida">Corrida</label>
+                </div>
+            </section>
+
+            <button type="submit">Enviar Questionário</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright 2023 - Questionário</p>
+    </footer>
+    
+</body>
+</html>

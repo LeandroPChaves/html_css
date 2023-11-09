@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="select.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h3>Vagas</h3>
+    </header>
+    
+    <main>
+        <h1>Formulário de vagas para programadores</h1>
+        <p>Preencha o formulário abaixo com suas informações.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula7/" autocomplete="off">
+            <section class="primeirosInput">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="email@provedor.com">
+
+                <label for="idEstado">Estado:</label>
+                <select name="estado" id="idEstado" required>
+                    <option value="" selected disabled>Selecione um Estado</option>
+                    <option value="es">Espírito Santo</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sp">São Paulo</option>
+                </select>
+            </section>
+
+            <section class="inputSelect">
+                <label for="idTecnologia">Tecnologia:</label>
+                <select name="tecnologia[]" id="idTecnologia" size="6" multiple>
+                    <option value="c">C</option>
+                    <option value="c++">C++</option>
+                    <option value="c#">C#</option>
+                    <option value="html">HTML</option>
+                    <option value="java">Java</option>
+                    <option value="javaScript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                </select>
+            </section>
+
+            <button type="submit">Enviar Formulário</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright 2023 - Questionário</p>
+    </footer>
+</body>
+</html>
